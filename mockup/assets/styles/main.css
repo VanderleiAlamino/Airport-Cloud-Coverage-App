@@ -1,23 +1,18 @@
 h1, h2, h3, h4, h5{
-    font-family: 'kinetikaultra';
-    background: rgb(0,112,254);
-    background: -moz-linear-gradient(180deg, rgba(0,112,254,0.9752275910364145) 0%, rgba(160,214,249,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(0,112,254,0.9752275910364145) 0%, rgba(160,214,249,1) 100%);
-    background: linear-gradient(180deg, rgba(0,112,254,0.9752275910364145) 0%, rgba(160,214,249,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0070fe",endColorstr="#a0d6f9",GradientType=1);    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0070fe;
+    font-family: 'kinetikalight';   
+    color: #666;
+    font-weight: 600;
 }
 
 .terrain{
     display: flex;    
-    flex-wrap: wrap;    
-    margin: 10px;
+    flex-wrap: wrap;        
     background-color: #fafafa;
     border: 1px solid #ccc;
     border-bottom: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: auto;
 }
 
 .grid{    

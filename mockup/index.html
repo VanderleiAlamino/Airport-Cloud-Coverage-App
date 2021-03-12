@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,44 @@
     <title>Airport Cloud Coverage</title>
     <link rel="stylesheet" href="assets/vendors/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/kinetica/stylesheet.css">
+    <link rel="stylesheet" href="assets/styles/switch.css">
+    <link rel="stylesheet" href="assets/styles/range.css">
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
+
 <body>
-    
-    
+
+
     <main class="container">
 
-        <header class="ui display">
-            <h1>Airport Cloud Coverage</h1>
+        <header class="ui display bg-light p-5 mb-5">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <h1>Airport Cloud Coverage</h1>
+                </div>
+                <div class="col-md-4">
+                    <!-- <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label> -->
+
+                    <!-- mapZoom -->
+                    <div>
+                        <label for="mapZoom">Definir tamanho do mapa <small>(<span id="demo">100</span>%)</small></label>
+                        <div class="rangecontainer">
+                            <input type="range" id="mapZoom" min="0" max="100" value="100" class="range" onchange="showVal(this.value)">
+                        </div>
+                    </div>
+                    <!-- /mapZoom -->
+
+                    
+                    
+                </div>
+            </div>
+
         </header>
 
-        <section class="ui terrain">
+        <section class="ui terrain" id="terrain">
 
 
             <!-- Primeira linha-->
@@ -33,7 +60,7 @@
             <div class="grid"></div>
             <div class="grid"></div>
             <!--/ Primeira linha-->
-            
+
             <!-- Segunda linha-->
             <div class="grid"></div>
             <div class="grid"></div>
@@ -155,5 +182,10 @@
     </main>
 
 
+<script src="assets/js/main.js"></script>
+
 </body>
+
+
+
 </html>
