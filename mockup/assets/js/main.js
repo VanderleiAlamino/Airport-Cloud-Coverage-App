@@ -7,3 +7,19 @@ function showVal(newVal){
     document.getElementById("demo").innerHTML=newVal;
     terrain.style.width = newVal + "%";
 }
+
+function activeInterface(e){
+    if(e.checked == true){
+        terrain.classList.add("ui");
+    }else{
+        terrain.classList.remove("ui");
+    }
+}
+
+function activeGrids(e){
+    if(e.checked == true){
+        terrain.classList.add("lines");
+    }else{
+        terrain.classList.remove("lines");
+    }
+}

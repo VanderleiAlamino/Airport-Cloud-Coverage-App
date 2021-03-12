@@ -24,28 +24,43 @@
                     <h1>Airport Cloud Coverage</h1>
                 </div>
                 <div class="col-md-4">
-                    <!-- <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                    </label> -->
+                    <div class="mb-3">
+                        Interface gráfica
+                        <label class="switch">
+                            <input type="checkbox" onchange="activeInterface(this)"> 
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        Ativar grades
+                        <label class="switch">
+                            <input type="checkbox" checked onchange="activeGrids(this)"> 
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+
 
                     <!-- mapZoom -->
                     <div>
-                        <label for="mapZoom">Definir tamanho do mapa <small>(<span id="demo">100</span>%)</small></label>
+                        <label for="mapZoom">Definir tamanho do mapa <small>(<span
+                                    id="demo">100</span>%)</small></label>
                         <div class="rangecontainer">
-                            <input type="range" id="mapZoom" min="0" max="100" value="100" class="range" onchange="showVal(this.value)">
+                            <input type="range" id="mapZoom" min="0" max="100" value="100" class="range"
+                                onchange="showVal(this.value)">
                         </div>
                     </div>
                     <!-- /mapZoom -->
 
-                    
-                    
+
+
                 </div>
             </div>
 
         </header>
 
-        <section class="ui terrain" id="terrain">
+        <section class="terrain lines" id="terrain">
 
 
             <!-- Primeira linha-->
@@ -55,7 +70,7 @@
             <div class="grid"></div>
             <div class="grid"></div>
             <div class="grid"></div>
-            <div class="grid"></div>
+            <div class="grid cloud"></div>
             <div class="grid"></div>
             <div class="grid"></div>
             <div class="grid"></div>
@@ -80,7 +95,7 @@
             <div class="grid"></div>
             <div class="grid"></div>
             <div class="grid"></div>
-            <div class="grid"></div>
+            <div class="grid cloud"></div>
             <div class="grid"></div>
             <div class="grid"></div>
             <div class="grid"></div>
@@ -95,7 +110,7 @@
             <div class="grid"></div>
             <div class="grid"></div>
             <div class="grid"></div>
-            <div class="grid"></div>
+            <div class="grid cloud"></div>
             <div class="grid"></div>
             <div class="grid"></div>
             <!--/ Quarta linha-->
@@ -182,7 +197,7 @@
     </main>
 
 
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
