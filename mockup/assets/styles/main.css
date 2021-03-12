@@ -50,12 +50,29 @@ h1, h2, h3, h4, h5{
 
 .grid.cloud::after{
     background-color: #666;
+}
+
+
+.grid.airport::after{
+    background-color: #069;
+}
+
+.grid.cloud::after,
+.grid.grid.airport::after{    
     width: 100%;
     height: 100%;    
 }
 
 .ui .grid.cloud::after{
     background-image: url(../images/cloud.webp);
+    background-size: contain; 
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;    
+}
+
+.ui .grid.airport::after{
+    background-image: url(../images/airport.webp);
     background-size: contain; 
     background-position: 50%;
     background-repeat: no-repeat;

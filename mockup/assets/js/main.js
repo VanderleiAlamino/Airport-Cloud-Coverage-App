@@ -2,6 +2,9 @@ var x = document.getElementById("mapZoom").value;
 document.getElementById("demo").innerHTML = x;
 
 terrain = document.getElementById("terrain");
+grid = document.createElement("div");
+grid.setAttribute("class", "grid");
+
 
 function showVal(newVal){
     document.getElementById("demo").innerHTML=newVal;
