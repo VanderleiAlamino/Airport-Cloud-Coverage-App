@@ -1,0 +1,33 @@
+.terrain{
+    display: flex;    
+    flex-wrap: wrap;    
+    margin: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.grid{    
+    display: flex;    
+    min-width: 10%;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+}
+
+.grid:nth-child(10n){
+    border-right: none;
+}
+
+.grid:before{
+    content: "";
+    height: 0;
+    float: left;
+    padding-bottom: 100%;
+}
+
+.grid::after {
+    content: "";
+    display: block;
+    clear: both;
+}
