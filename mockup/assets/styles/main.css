@@ -52,29 +52,38 @@ h1, h2, h3, h4, h5{
     background-color: #666;
 }
 
+.grid.volcano::after{
+    background-color: #A00;
+}
 
 .grid.airport::after{
     background-color: #069;
 }
 
 .grid.cloud::after,
-.grid.grid.airport::after{    
+.grid.volcano::after,
+.grid.airport::after{    
     width: 100%;
     height: 100%;    
 }
 
-.ui .grid.cloud::after{
-    background-image: url(../images/cloud.webp);
+.ui .grid.cloud::after,
+.ui .grid.volcano::after,
+.ui .grid.airport::after{    
     background-size: contain; 
     background-position: 50%;
     background-repeat: no-repeat;
-    background-color: transparent;    
+    background-color: transparent;   
+}
+
+.ui .grid.cloud::after{
+    background-image: url(../images/cloud.webp);     
+}
+
+.ui .grid.volcano::after{
+    background-image: url(../images/volcano.webp);
 }
 
 .ui .grid.airport::after{
     background-image: url(../images/airport.webp);
-    background-size: contain; 
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-color: transparent;    
 }
