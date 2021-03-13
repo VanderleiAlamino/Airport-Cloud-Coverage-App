@@ -4,6 +4,9 @@ document.getElementById("demo").innerHTML = x;
 terrain = document.getElementById("terrain");
 grid = document.createElement("div");
 grid.setAttribute("class", "grid");
+aside = document.getElementById("aside");
+
+display = false;
 
 
 function showVal(newVal){
@@ -26,3 +29,14 @@ function activeGrids(e){
         terrain.classList.remove("lines");
     }
 }
+
+function toggleDisplay(){
+    display = !display;
+
+    if(display){
+        aside.classList.add("open-filter");
+    }else{
+        aside.classList.remove("open-filter");
+    }
+}
+

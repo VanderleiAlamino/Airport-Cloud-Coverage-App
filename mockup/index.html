@@ -11,53 +11,16 @@
     <link rel="stylesheet" href="assets/styles/switch.css">
     <link rel="stylesheet" href="assets/styles/range.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/aside.css">
 </head>
 
 <body>
 
 
-    <main class="container">
+    <main class="container-fluid">
 
-        <header class="ui display bg-light p-5 mb-5">
-            <div class="row align-items-center">
-                <div class="col-md">
-                    <h1>Airport Cloud Coverage</h1>
-                </div>
-                <div class="col-md-4">
-                    <div class="mb-3">
-                        Interface gráfica
-                        <label class="switch">
-                            <input type="checkbox" onchange="activeInterface(this)"> 
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-
-                    <div class="mb-3">
-                        Ativar grades
-                        <label class="switch">
-                            <input type="checkbox" checked onchange="activeGrids(this)"> 
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-
-
-
-                    <!-- mapZoom -->
-                    <div>
-                        <label for="mapZoom">Definir tamanho do mapa <small>(<span
-                                    id="demo">100</span>%)</small></label>
-                        <div class="rangecontainer">
-                            <input type="range" id="mapZoom" min="0" max="100" value="100" class="range"
-                                onchange="showVal(this.value)">
-                        </div>
-                    </div>
-                    <!-- /mapZoom -->
-
-
-
-                </div>
-            </div>
-
+        <header class="ui display bg-light p-2 mb-2">
+            <h1>Airport Cloud Coverage</h1>
         </header>
 
         <section class="terrain lines" id="terrain">
@@ -195,6 +158,55 @@
 
         </section>
     </main>
+
+
+
+    <!--open-filter-->
+    <aside class="aside-filter " id="aside">
+        <button class="btn btn-primary" onclick="toggleDisplay()">
+            x
+        </button>
+
+        <div>
+            <h3>
+                Menu
+                <a class="float-right mt-1">
+                  <i class="fas fa-times"></i>
+                </a>    
+              </h3>
+              <hr>
+            
+              <div class="mb-3">
+                  Interface gráfica
+                  <label class="switch">
+                      <input type="checkbox" onchange="activeInterface(this)"> 
+                      <span class="slider round"></span>
+                  </label>
+              </div>
+      
+              <div class="mb-3">
+                  Ativar grades
+                  <label class="switch">
+                      <input type="checkbox" checked onchange="activeGrids(this)"> 
+                      <span class="slider round"></span>
+                  </label>
+              </div>
+      
+              <!-- mapZoom -->
+              <div>
+                  <label for="mapZoom">Definir tamanho do mapa <small>(<span
+                              id="demo">100</span>%)</small></label>
+                  <div class="rangecontainer">
+                      <input type="range" id="mapZoom" min="0" max="100" value="100" class="range"
+                          onchange="showVal(this.value)">
+                  </div>
+              </div>
+              <!-- /mapZoom -->
+        </div>
+
+        
+       
+      </aside>
 
 
     <script src="assets/js/main.js"></script>

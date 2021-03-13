@@ -1,3 +1,5 @@
+
+
 h1, h2, h3, h4, h5{
     font-family: 'kinetikalight';   
     color: #666;
@@ -7,8 +9,7 @@ h1, h2, h3, h4, h5{
 .terrain{
     display: flex;    
     flex-wrap: wrap;        
-    background-color: #fafafa;    
-    margin: auto;
+    background-color: #fafafa;
     margin-bottom: 1rem;
     width: 100%;    
 }
