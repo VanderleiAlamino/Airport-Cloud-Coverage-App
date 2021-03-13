@@ -1,7 +1,10 @@
 import './App.scss'
 import React from 'react'
+import Terrain from './components/terrain/Terrain'
 
 export default (props) =>
 (
-    <h1>Hello world in React</h1>
+    <main className="container">
+        <Terrain></Terrain> 
+    </main>
 );

@@ -1,0 +1,102 @@
+.terrain {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    &.lines {
+        border: 1px solid #ccc;
+        border-right: none;
+        border-bottom: none;
+    }
+}
+
+.grid {
+    display: flex;
+    min-width: 10%;
+
+    &.cloud,
+    &.volcano,
+    &.airport {
+        &::after {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.cloud {
+        &::after {
+            background-color: #666;
+        }
+    }
+
+    &.volcano {
+        &::after {
+            background-color: #a00;
+        }
+    }
+
+    &.airport {
+        &::after {
+            background-color: #069;
+        }
+    }
+
+    &:before {
+        content: "";
+        height: 0;
+        float: left;
+        padding-bottom: 100%;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.ui {
+    .grid {
+        background-image: url(/assets/images/grass.webp);
+        background-size: contain;
+
+        &.cloud,
+        &.volcano,
+        &.airport {
+            &::after {
+                background-size: contain;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+            }
+        }
+
+        &.cloud {
+            &::after {
+                background-image: url(/assets/images/cloud.webp);
+            }
+        }
+
+        &.volcano {
+            &::after {
+                background-image: url(/assets/images/volcano.webp);
+            }
+        }
+
+        &.airport {
+            &::after {
+                background-image: url(/assets/images/airport.webp);
+            }
+        }
+    }
+}
+
+.lines {
+    .grid {
+        border: 1px solid #ccc;
+        border-top: none;
+        border-left: none;
+    }
+}
