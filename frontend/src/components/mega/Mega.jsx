@@ -24,7 +24,7 @@ export default (props) => {
             <h3>Mega</h3>
             <h4>{numeros.join(' ')}</h4>
 
-            <button onClick={gerarNumeros}>Gerar números</button>
+            <button className="btn btn-success" onClick={gerarNumeros}>Gerar números</button>
         </div>
     )
 }

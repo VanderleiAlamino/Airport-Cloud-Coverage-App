@@ -16,9 +16,9 @@ import Mega from './components/mega/Mega'
 
 export default (props) =>
 (
-    <div className="App">
+    <div className="App container">
 
-        <h1>Fundamentos do React</h1>
+        <h1 className="py-3">Fundamentos do React</h1>
 
         <div className="Cards">
             <Card titulo="#01 - Primeiro componente" color="#FA6900">

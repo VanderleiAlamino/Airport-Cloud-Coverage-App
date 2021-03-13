@@ -8,7 +8,7 @@ export default (props) => {
 
     return (
         <div>
-            <button onClick={acao}>Alterar</button>
+            <button className="btn btn-primary" onClick={acao}>Alterar</button>
         </div>
     );
 };

@@ -27,15 +27,21 @@ export default class Contador extends Component {
                 <h2>Contador</h2>
                 <h4>Valor: {this.state.valor}</h4>
 
-                <div>
-                    <label htmlFor="passoInput">Passo:</label>
-                    <input type="number" id="passoInput" value={this.state.passo}                    
-                     onChange={e => this.setState({ passo: +e.target.value })} />
+                <div className="row justify-content-center">
+                    <div className="col-auto">
+                        <div className="form-group text-left">
+                            <label htmlFor="passoInput">Passo:</label>
+                            <input className="form-control" type="number" id="passoInput" value={this.state.passo}
+                                onChange={e => this.setState({ passo: +e.target.value })} />
+                        </div>
+                    </div>
                 </div>
 
+
+
                 <div>
-                    <button onClick={this.inc}>+</button>
-                    <button onClick={this.dec}>-</button>
+                    <button className="btn btn-primary mx-1" onClick={this.inc}>+</button>
+                    <button className="btn btn-danger mx-1" onClick={this.dec}>-</button>
                 </div>
 
             </div>
