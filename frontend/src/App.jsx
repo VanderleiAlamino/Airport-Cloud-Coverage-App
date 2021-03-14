@@ -8,7 +8,8 @@ import Dashboard from './components/dashboard/Dashboard';
 export default (props) => {
 
     const [interfaceUi, setInterfaceUi] = useState(false)
-    const [interfaceLine, setInterfaceLine] = useState(false)
+    const [interfaceLine, setInterfaceLine] = useState(false)    
+    const [numeros, setNumeros] = useState([])
 
     function quandoClicar(interfaceUi) {
         setInterfaceUi(interfaceUi)
@@ -18,18 +19,23 @@ export default (props) => {
         setInterfaceLine(interfaceLine)
     }
 
+    function whenClickElements(numeros){        
+        setNumeros(numeros)        
+    }    
+
     return (
         <div className="app-airport">
 
             <Display
                 onClicar={quandoClicar}
                 onClickLines={whenClickLines}
+                onClickElements={whenClickElements}                
             />
 
             <Terrain
                 activeInterfaceUi={interfaceUi}
-                activeInterfaceLine={interfaceLine}
-                qtdNumeros={7}
+                activeInterfaceLine={interfaceLine}                
+                numeros={numeros}
             />
 
             <Dashboard />
