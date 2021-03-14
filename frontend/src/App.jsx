@@ -29,6 +29,7 @@ export default (props) => {
             <Terrain
                 activeInterfaceUi={interfaceUi}
                 activeInterfaceLine={interfaceLine}
+                qtdNumeros={7}
             />
 
             <Dashboard />
