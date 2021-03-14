@@ -1,13 +1,15 @@
 import './Terrain.scss'
 import React from 'react'
 
-export default (props) => {
-
+export default (props) => {    
 
     return (
-        <section className="terrain lines ui" id="terrain">
 
+        
 
+        <section className={`terrain ${props.activeInterfaceUi ? "ui" : ""} ${props.activeInterfaceLine ? "lines" : ""} `} id="terrain">
+
+       
 
             <div className="grid"></div>
             <div className="grid"></div>

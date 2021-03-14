@@ -1,0 +1,39 @@
+@import "../../Variables.scss";
+.sidebar {
+    background-color: #2f4050;
+    color: $text-color;
+    width: 225px;
+    overflow: hidden;   
+    
+
+    .nav-header {
+        background-image: url(/assets/images/header-profile.webp);
+        background-repeat: no-repeat;
+        height: 156px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+
+        small {
+            color: $text-muted;
+            font-weight: 500;
+        }
+
+        span {
+            color: $red;
+            font-size: 1.1rem;
+        }
+    }
+
+    .ui {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 10px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        border-bottom: 1px solid $border-dark;
+    }
+}

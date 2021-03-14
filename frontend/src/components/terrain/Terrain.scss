@@ -1,12 +1,11 @@
 .terrain {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fafafa;
-    margin-bottom: 1rem;
-    width: 100%;
+    background-color: #fafafa;    
+    width: 100vh;
+    border: 1px solid #ccc;
 
-    &.lines {
-        border: 1px solid #ccc;
+    &.lines {        
         border-right: none;
         border-bottom: none;
     }
