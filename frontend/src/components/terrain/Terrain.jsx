@@ -41,7 +41,6 @@ export default (props) => {
                     }else{
                         terrainGrid.push(<div className="grid airport"></div>)
                     }
-
                     indexArray++
                 }
             }
