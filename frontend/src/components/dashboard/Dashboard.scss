@@ -1,0 +1,123 @@
+@import "../../Variables.scss";
+
+.dashboard{
+    padding: 0px 15px 0 15px;
+    background-color: $bg-color-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+    .main-card{
+        height: 100%;
+    }
+
+    .dashboard{
+
+        &-header{
+            border-bottom: 1px solid $border;
+        }
+
+        &-footer{
+            border-top: 1px solid $border;
+        }
+
+        &-header,
+        &-footer{
+            padding: 20px 0;
+            background-color: $white;            
+    
+            h2{
+                font-weight: 200;
+                font-size: 1.8rem;
+            }
+    
+            small{
+                font-weight: 500;
+                color: $text-muted;
+            }
+        }
+
+        &-body{
+            padding: 20px;
+
+
+            .card{
+                &-header{
+                    background-color: #ffffff;
+                    border-color: #e7eaec;
+                    border-width: 1px;
+                    margin-bottom: 0;
+                    padding: 8px 15px 8px 15px;
+                    position: relative;
+                    border-radius: 2px 2px 0 0;
+                }
+
+                &-body{
+                    font-size: .8rem;
+                    padding: 15px 5px;
+
+                    p{
+                        margin-bottom: .2rem;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+.timeline{
+    &-item{
+        > [class*="row"]{
+            [class*="col-"]{
+                &:first-child{
+                    border-right: 1px solid $border;
+                    text-align: right;
+                    padding-top: 10px;
+
+                    strong{
+                        font-weight: 700;
+                    }
+                }
+                
+                + [class*="col"]{
+                    border-bottom: 1px solid $border;
+                    padding: 10px;
+
+                    &:hover{
+                        background-color: $tint;
+                    }
+
+                    .badge{
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.widget{
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.icon{
+    font-size: 3rem;
+}
+
+h3{
+    font-weight: 300;
+}
+
+.todo-list{
+    background: $bg-color-light;
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    padding: 6px 6px 6px 12px;
+    font-size: .8rem;
+}

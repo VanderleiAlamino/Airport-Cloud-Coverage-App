@@ -4,10 +4,11 @@
     background-color: #fafafa;    
     width: 100vh;
     border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
 
     &.lines {        
-        border-right: none;
-        border-bottom: none;
+        border-right: none;        
     }
 }
 

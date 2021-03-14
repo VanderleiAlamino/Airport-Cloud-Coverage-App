@@ -3,10 +3,9 @@ import './App.scss'
 import React, { useState } from 'react'
 import Terrain from './components/terrain/Terrain'
 import Display from './components/display/Display';
+import Dashboard from './components/dashboard/Dashboard';
 
 export default (props) => {
-
-
 
     const [interfaceUi, setInterfaceUi] = useState(false)
     const [interfaceLine, setInterfaceLine] = useState(false)
@@ -19,9 +18,9 @@ export default (props) => {
         setInterfaceLine(interfaceLine)
     }
 
-
     return (
         <div className="app-airport">
+
             <Display
                 onClicar={quandoClicar}
                 onClickLines={whenClickLines}
@@ -31,6 +30,8 @@ export default (props) => {
                 activeInterfaceUi={interfaceUi}
                 activeInterfaceLine={interfaceLine}
             />
+
+            <Dashboard />
         </div>
     )
 }
