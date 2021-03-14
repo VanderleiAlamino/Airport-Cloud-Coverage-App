@@ -16,7 +16,10 @@ export default (props) => {
                 </div>
 
 
-                <div className="col-md"></div>
+                <div className="col-md">
+
+
+                </div>
             </div>
 
             <div className="row dashboard-body">
@@ -225,7 +228,7 @@ export default (props) => {
 
             <div className="row dashboard-footer">
                 <div className="col-12">
-                    Copyright GFT © 2021
+                    <strong>Copyright</strong> GFT © 2021
                 </div>
             </div>
         </div>
