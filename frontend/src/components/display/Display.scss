@@ -37,3 +37,22 @@
         border-bottom: 1px solid $border-dark;
     }
 }
+
+.square{
+
+    width: 24px;
+    height: 24px;
+
+    &.terrain{
+        background-color: $terrain;
+    }
+
+    &.airport{
+        background-color: $airport;
+    }
+
+    &.cloud{
+        background-color: $cloud;
+    }
+    
+}

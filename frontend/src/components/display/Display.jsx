@@ -65,6 +65,27 @@ export default (props) => {
                     <FontAwesomeIcon icon={faPlane} />
                 </button>
             </div>
+
+            <div className="items-display ui">
+                Terrain
+
+                <div className="square terrain">
+                </div>                
+            </div>
+
+            <div className="items-display ui">
+                Clouds
+
+                <div className="square cloud">
+                </div>                
+            </div>
+
+            <div className="items-display ui">
+                Airports
+
+                <div className="square airport">
+                </div>                
+            </div>
         </div>
     )
 }

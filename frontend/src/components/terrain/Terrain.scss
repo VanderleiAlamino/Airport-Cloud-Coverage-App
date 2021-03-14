@@ -1,7 +1,9 @@
+@import "../../Variables.scss";
+
 .terrain {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fafafa;    
+    background-color: $terrain;    
     width: 100vh;
     border: 1px solid #ccc;
     border-top: none;
@@ -31,7 +33,7 @@
 
     &.cloud {
         &::after {
-            background-color: #666;
+            background-color: $cloud;
         }
     }
 
@@ -43,7 +45,7 @@
 
     &.airport {
         &::after {
-            background-color: #069;
+            background-color: $airport;
         }
     }
 

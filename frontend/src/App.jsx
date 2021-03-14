@@ -9,7 +9,7 @@ export default (props) => {
 
     const [interfaceUi, setInterfaceUi] = useState(false)
     const [interfaceLine, setInterfaceLine] = useState(false)    
-    const [numeros, setNumeros] = useState([])
+    const [numeros, setNumeros] = useState([3,15,33,49,66,72,93])
 
     function quandoClicar(interfaceUi) {
         setInterfaceUi(interfaceUi)

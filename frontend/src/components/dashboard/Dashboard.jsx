@@ -4,23 +4,15 @@ import React from 'react'
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import DashboardHeader from './dashboard-header/DashboardHeader';
+
 export default (props) => {
 
 
     return (
         <div className="dashboard">
-            <div className="row dashboard-header">
-                <div className="col-md-auto">
-                    <h2>Airport Cloud Coverage</h2>
-                    <small>You have 42 messages and 6 notifications.</small>
-                </div>
-
-
-                <div className="col-md">
-
-
-                </div>
-            </div>
+            
+            <DashboardHeader />
 
             <div className="row dashboard-body">
                 <div className="col-md-7">
