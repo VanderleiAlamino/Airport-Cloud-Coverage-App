@@ -1,5 +1,18 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "assets/scss/switch";
 
 .app-airport{
     display: flex;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-down(sm) { 
+        flex-direction: column;
+    }   
+
+    @include media-breakpoint-down(sm) { 
+        > div {
+            flex: 1;
+            flex-wrap: wrap;
+        }
+    }   
 }

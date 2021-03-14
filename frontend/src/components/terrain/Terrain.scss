@@ -1,13 +1,25 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../Variables.scss";
 
 .terrain {
     display: flex;
     flex-wrap: wrap;
-    background-color: $terrain;    
-    width: 100vh;
+    background-color: $terrain;        
     border: 1px solid #ccc;
     border-top: none;
     border-bottom: none;
+    @include media-breakpoint-up(xl) { 
+        width: 100vh;
+    }
+
+    @include media-breakpoint-down(lg) { 
+        width: calc(100vw - 226px);
+    }  
+    
+    @include media-breakpoint-down(sm) { 
+        width: 100vw;
+    }  
+    
 
     &.lines {        
         border-right: none;        

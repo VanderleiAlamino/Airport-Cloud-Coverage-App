@@ -1,3 +1,4 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../Variables.scss";
 
 .dashboard{
@@ -6,13 +7,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+    flex: 1;   
 
     .main-card{
         height: 100%;
     }
 
-    .dashboard{
+    
 
         &-header{
             border-bottom: 1px solid $border;
@@ -20,6 +21,10 @@
 
         &-footer{
             border-top: 1px solid $border;
+
+            @include media-breakpoint-down(sm) { 
+                text-align: center;      
+            }
         }
 
         &-header,
@@ -40,7 +45,9 @@
 
         &-body{
             padding: 20px;
-
+            @include media-breakpoint-down(sm) { 
+                padding: 15px 0;
+            }
 
             .card{
                 &-header{
@@ -63,7 +70,7 @@
                 }
             }
         }
-    }    
+    
 }
 
 .timeline{

@@ -1,20 +1,27 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../Variables.scss";
 .sidebar {
     background-color: #2f4050;
     color: $text-color;
     width: 225px;
     overflow: hidden;   
+
+    @include media-breakpoint-down(sm) { 
+        width: 100%;        
+    }
     
 
     .nav-header {
         background-image: url(/assets/images/header-profile.webp);
         background-repeat: no-repeat;
         height: 156px;
+        //width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        padding: 10px;
+        padding: 10px;    
+        background-size: cover;
 
         small {
             color: $text-muted;
