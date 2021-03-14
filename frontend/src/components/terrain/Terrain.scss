@@ -15,6 +15,10 @@
 .grid {
     display: flex;
     min-width: 10%;
+    color: #fff;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
 
     &.cloud,
     &.volcano,

@@ -142,12 +142,12 @@ export default (props) => {
                 </div>
 
                 <div className="col-md-5">
-                    <div class="widget bg-warning text-white text-center mb-3">
+                    <div className="widget bg-warning text-white text-center mb-3">
                         <span className="icon">
                             <FontAwesomeIcon icon={faExclamationTriangle} />
                         </span>
-                        <h1 class="m-xs">Alert</h1>
-                        <h3 class="font-bold no-margins">
+                        <h1 className="m-xs">Alert</h1>
+                        <h3 className="font-bold no-margins">
                             Imminent risk
                             </h3>
                         <small>for tomorrow</small>
