@@ -1,12 +1,21 @@
 const express = require('express')
 const routes = express.Router()
 
-let db = [
-    { '1': { Nome: 'Cliente 1', Idade: '20' } },
-    { '2': { Nome: 'Cliente 2', Idade: '30' } },
-    { '3': { Nome: 'Cliente 3', Idade: '40' } }
-]
- 
+
+// Números que serão gerados aleatoriamente
+function gerarNumero(existentes) {
+    var novoNumero = parseInt(Math.random() * 100) + 1;
+    if (existentes.indexOf(novoNumero) != -1) novoNumero = gerarNumero(existentes);
+    return novoNumero;
+}
+
+var numeros = [];
+while (numeros.length < 7) {
+    numeros.push(gerarNumero(numeros));
+}
+numeros = numeros.sort();
+let db = numeros
+
 // Buscar dados
 routes.get('/', (req, res) => {
     return res.json(db)

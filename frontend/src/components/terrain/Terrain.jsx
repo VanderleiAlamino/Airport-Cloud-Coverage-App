@@ -1,7 +1,22 @@
 import './Terrain.scss'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-export default (props) => {    
+import axios from 'axios'
+
+export default (props) => {     
+    
+    let urlNode = 'http://localhost:7293/'   
+
+    const [positions, setPositions] = useState([])
+
+    /* Consumindo API */
+    useEffect(() => {
+        axios.get(urlNode)
+            .then((response) => {
+                console.log(response.data)
+                setPositions(response.data)
+            })
+    }, [])
 
     /* GERAR GRID NO TERRAIN */
     const verticalAxis = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
@@ -9,14 +24,14 @@ export default (props) => {
 
     let terrainGrid = []
     let numberGrid = 0;
-    let indexArray = 0;
+    let indexArray = 0;   
 
     for (let j = 0; j < verticalAxis.length; j++) {
         for (let i = 0; i < horizontalAxis.length; i++) {
             numberGrid++;
             terrainGrid.push(<div className="grid"></div>)
 
-            for (const numGerado of props.numeros) {
+            for (const numGerado of positions) {
                 if (numGerado === numberGrid) {
                     terrainGrid.pop()
 
@@ -30,7 +45,6 @@ export default (props) => {
             }
         }
     }
-
 
     return (
 

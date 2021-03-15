@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default (props) => {    
     
     const [numeros, setNumeros] = useState(Array(7).fill(0))
+    
     function gerarNumerosNaoContido(array) {
         const novoNumero = parseInt(Math.random() * 100)
         return array.includes(novoNumero)
