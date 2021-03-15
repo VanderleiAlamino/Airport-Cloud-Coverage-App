@@ -1,6 +1,5 @@
 import './DashboardHeader.scss'
 import React, { useState } from 'react'
-
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +16,7 @@ export default (props) => {
                 <small>You have 4 clouds in national territory.</small>
             </div>
 
-            <div className="col-md-12 col-lg border-left">
+            <div className="col-md-12 col-lg border-left"> 
 
                 <div className="row align-items-center">
                     <div className="col-auto">
@@ -30,7 +29,7 @@ export default (props) => {
 
                         <div className="form-row">
                             <div className="col-auto">
-                                <button className="btn btn-info" onClick={() => setDay(day != 1 ? day - 1 : day)}>
+                                <button className="btn btn-info" onClick={() => setDay(day !== 1 ? day - 1 : day)}>
                                     <FontAwesomeIcon icon={faChevronLeft} />
                                 </button>
                             </div>

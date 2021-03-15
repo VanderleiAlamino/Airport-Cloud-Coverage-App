@@ -1,7 +1,5 @@
 import './Display.scss'
-import React, { useState } from 'react'
-
-import { faPlane } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,7 +11,7 @@ export default (props) => {
     }
 
     function toggleLines(e){        
-        props.onClickLines(e.target.checked)
+        props.onClickLines(e.target.checked) 
     }    
 
     return (
