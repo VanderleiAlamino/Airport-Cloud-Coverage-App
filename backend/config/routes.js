@@ -1,7 +1,6 @@
 const express = require('express')
 const routes = express.Router()
 
-
 // Números que serão gerados aleatoriamente
 function gerarNumero(existentes) {
     var novoNumero = parseInt(Math.random() * 100) + 1;
@@ -19,7 +18,7 @@ let db = numeros
 // Buscar dados
 routes.get('/', (req, res) => {
     return res.json(db)
-})
+}) 
 
 // Inserir dados
 routes.post('/add', (req, res) => {
