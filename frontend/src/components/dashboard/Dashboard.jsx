@@ -5,6 +5,7 @@ import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import DashboardHeader from './dashboard-header/DashboardHeader';
+import Timeline from './timeline/Timeline';
 
 export default (props) => {
 
@@ -18,117 +19,28 @@ export default (props) => {
                 <div className="col-md-7">
                     <div className="card main-card">
                         <div className="card-header">
-                            Timeline clouds average
+                            Timeline Clouds Average
                         </div>
                         <div className="card-body">
+
                             <div className="timeline">
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>1º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-info">4%</span></p>
-                                            <p>Affected airports: <span className="badge badge-info">0</span></p>
-                                        </div>
-                                    </div>
 
-                                </div>
+                                <Timeline title="Day 1" clouds={4} airports={0} />
 
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>2º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-warning">36%</span></p>
-                                            <p>Affected airports: <span className="badge badge-danger">2</span></p>
-                                        </div>
-                                    </div>
+                                <Timeline title="Day 2" clouds={36} airports={1} />
 
-                                </div>
+                                <Timeline title="Day 3" clouds={48} airports={2} />
 
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>1º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-info">4%</span></p>
-                                            <p>Affected airports: <span className="badge badge-info">0</span></p>
-                                        </div>
-                                    </div>
+                                <Timeline title="Day 4" clouds={59} airports={3} />
 
-                                </div>
+                                <Timeline title="Day 5" clouds={80} airports={3} />
 
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>2º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-warning">36%</span></p>
-                                            <p>Affected airports: <span className="badge badge-danger">2</span></p>
-                                        </div>
-                                    </div>
+                                <Timeline title="Day 6" clouds={95} airports={3} />
 
-                                </div>
-
-
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>1º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-info">4%</span></p>
-                                            <p>Affected airports: <span className="badge badge-info">0</span></p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>2º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-warning">36%</span></p>
-                                            <p>Affected airports: <span className="badge badge-danger">2</span></p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>1º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-info">4%</span></p>
-                                            <p>Affected airports: <span className="badge badge-info">0</span></p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="timeline-item">
-                                    <div className="form-row">
-                                        <div className="col-3">
-                                            <p><strong>2º Day</strong></p>
-                                        </div>
-                                        <div className="col">
-                                            <p>Cloud Percentage: <span className="badge badge-warning">36%</span></p>
-                                            <p>Affected airports: <span className="badge badge-danger">2</span></p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
+                                <Timeline title="Day 7" clouds={100} airports={3} />
+                                
                             </div>
+                        
                         </div>
                     </div>
                 </div>

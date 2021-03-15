@@ -12,12 +12,12 @@ export default (props) => {
 
     return (
         <div className="row dashboard-header">
-            <div className="col-md-auto">
+            <div className="col-md-12 col-lg-auto">
                 <h2>Airport Cloud Coverage</h2>
-                <small>You have 42 messages and 6 notifications.</small>
+                <small>You have 4 clouds in national territory.</small>
             </div>
 
-            <div className="col-md border-left">
+            <div className="col-md-12 col-lg border-left">
 
                 <div className="row align-items-center">
                     <div className="col-auto">

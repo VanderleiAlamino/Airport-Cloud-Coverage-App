@@ -4,7 +4,8 @@
 .terrain {
     display: flex;
     flex-wrap: wrap;
-    background-color: $terrain;        
+    background-color: $terrain;   
+    background-image: url(../../assets/images/texture-map.webp);     
     border: 1px solid #ccc;
     border-top: none;
     border-bottom: none;
