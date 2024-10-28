@@ -1,0 +1,10 @@
+frontend:
+    path: ./
+    publish: ""
+    scripts:
+        build: ""
+        deploy: ""
+    subdomain: Airport-Cloud-Coverage-App
+name: Airport-Cloud-Coverage-App
+region: us-east-1
+yamlVersion: 2
